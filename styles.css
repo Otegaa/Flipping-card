@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+h3 {
+  letter-spacing: 0.5rem;
+  padding: 8rem;
+}
+p {
+  font-style: italic;
+  text-align: center;
+}
+
+img {
+  margin: auto;
+  display: block;
+  border-radius: 7px;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+.container {
+  height: 100vh;
+  background-image: linear-gradient(to right, #00ffff, #f0ffff);
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+}
+
+.cards {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.card-sides {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  height: 40rem;
+  width: 30%;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 35%;
+}
+
+.frontside {
+  background-color: black;
+  transition: all 0.8s ease;
+  margin: 12rem auto;
+  width: 30%;
+  border-radius: 30px;
+  box-shadow: 0.2rem 0.3rem;
+}
+
+.backside {
+  border-radius: 30px;
+  background-color: #e65034;
+  margin: 12rem auto;
+  width: 30%;
+  transition: all 0.5s;
+  height: 40rem;
+  transform: rotateY(180deg);
+  text-transform: uppercase;
+}
+
+.cards:hover .frontside {
+  transform: rotateY(-180deg);
+}
+
+.cards:hover .backside {
+  transform: rotateY(0);
+}
+
+.social-media,
+.contact {
+  text-align: center;
+}
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media a {
+  display: inline-flex;
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.social-media a:hover {
+  background: #2c3e50;
+  color: black;
+}
